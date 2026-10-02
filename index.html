@@ -101,7 +101,7 @@ npm install</pre>
 <li>The bot shows an <b>8-character pairing code</b> in the console.</li>
 <li>On the bot phone: WhatsApp, <b>Linked devices</b>, <b>Link a device</b>, then <b>Link with phone number instead</b>.</li>
 <li>Type the code. Wait a few seconds. The bot says it is online.</li>
-<li>Send <code>/menu</code> to the bot to see all 39 commands.</li></ol>
+<li>Send <code>/menu</code> to the bot to see all 46 commands.</li></ol>
 <p>The login is saved in the <code>auth/</code> folder on your host. Keep that folder private and never upload it anywhere.</p></section>
 
 <section><h2>6. Ban-risk notes</h2>
@@ -115,7 +115,7 @@ npm install</pre>
 </div>
 <script>
 const $=i=>document.getElementById(i);
-const lines=["Downloads. AI chat. Image tools.","39 commands. Group management.","Set up in about 10 minutes."];
+const lines=["Downloads. AI chat. Image tools.","46 commands. Group management.","Set up in about 10 minutes."];
 let li=0,ci=0,del=false;
 (function tick(){const s=lines[li];$("type").textContent=s.slice(0,ci);
 if(!del&&ci<s.length)ci++;else if(!del){del=true;return setTimeout(tick,1400)}else if(ci>0)ci--;else{del=false;li=(li+1)%lines.length}
